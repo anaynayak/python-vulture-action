@@ -1,0 +1,12 @@
+name: "Vulture"
+description: "Run vulture to analyse dead code in python projects"
+inputs:
+  root-dir:
+    description: "Root directory to check"
+    required: true
+    default: "."
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.root-dir }}

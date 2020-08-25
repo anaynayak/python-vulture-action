@@ -1,0 +1,14 @@
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: vulture
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Scavenge
+        uses: ./
+        id: vulture
+        with:
+          root-dir: '.'
