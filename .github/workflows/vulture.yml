@@ -11,4 +11,4 @@ jobs:
         uses: ./
         id: vulture
         with:
-          root-dir: '.'
+          root-dir: 'example'
