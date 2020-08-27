@@ -1,8 +1,9 @@
-name: "Vulture"
+name: Python Vulture Action
+author: Anay Nayak
 description: "Run vulture to analyse dead code in python projects"
 inputs:
   vulture-args:
-    description: "vulture args"
+    description: "cli arguments passed to vulture"
     required: true
     default: "."
 runs:
@@ -11,5 +12,5 @@ runs:
   args:
     - ${{ inputs.vulture-args }}
 branding:
-  icon: 'feather'
-  color: 'gray-dark'
+  icon: "feather"
+  color: "orange"
