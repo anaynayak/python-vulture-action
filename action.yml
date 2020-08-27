@@ -1,12 +1,15 @@
 name: "Vulture"
 description: "Run vulture to analyse dead code in python projects"
 inputs:
-  root-dir:
-    description: "Root directory to check"
+  vulture-args:
+    description: "vulture args"
     required: true
     default: "."
 runs:
   using: "docker"
   image: "Dockerfile"
   args:
-    - ${{ inputs.root-dir }}
+    - ${{ inputs.vulture-args }}
+branding:
+  icon: 'feather'
+  color: 'gray-dark'

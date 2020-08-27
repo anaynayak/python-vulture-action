@@ -11,4 +11,4 @@ jobs:
         uses: ./
         id: vulture
         with:
-          root-dir: 'example'
+          vulture-args: example --min-confidence 90
