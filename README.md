@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Scavenge
-        uses: anaynayak/python-vulture-action@v1
+        uses: anaynayak/python-vulture-action@v1.0
         id: vulture
         with:
           vulture-args: example --min-confidence 90
